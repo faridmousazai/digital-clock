@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-image: url(/photos/animated-clock-last-seconds-to-o-clock-animated-clock-last-seconds-to-o-clock-red-outline-driwing-red-glowing-clock-133940984.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+h2{
+    color: aliceblue;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.clock{
+    color: aliceblue;
+    display: flex;
+}
+.clock div{
+    margin: 6px;
+    position: relative;
+}
+.clock span{
+    display: flex;
+    height: 6rem;
+    width: 6rem;
+    opacity: 0.8;
+    background: rgb(12, 86, 135);
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+.clock .text{
+    height: 2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    background: rgb(61, 58, 37);
+}
+.clock #ampm{
+    width: 3.7rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    background: rgb(46, 75, 61);
+}
+.AM{
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 800px) {
+    .timer-second{
+        display: none;
+    }
+    .clock span{
+        font-size: 2rem;
+        height: 4rem;
+        width: 4rem;
+    }
+    .clock .text{
+        font-size: 0.6rem;
+    }
+    body{
+        background-size: 190%;
+    }
+}
